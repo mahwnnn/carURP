@@ -55,6 +55,30 @@ public class AnimationManager : MonoBehaviour
         {
             anim.SetBool("interior",true);
         }
+    } 
+    public void DashView()
+    {
+       // anim.SetBool("wheel",false);
+        if (anim.GetBool("Dash"))
+        {
+            anim.SetBool("Dash",false);
+        }
+        else
+        {
+            anim.SetBool("Dash",true);
+        }
+    }
+    public void ShellView()
+    {
+       // anim.SetBool("wheel",false);
+        if (anim.GetBool("shell"))
+        {
+            anim.SetBool("shell",false);
+        }
+        else
+        {
+            anim.SetBool("shell",true);
+        }
     }
     public void FreeCamera()
     {
