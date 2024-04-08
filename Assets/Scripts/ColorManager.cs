@@ -12,6 +12,7 @@ public class ColorManager : MonoBehaviour
     public Material bodyshell;
     public Material passengerLeather;
     public Material mainCarLeather;
+    public Material steeringWheel;
 
 
     public void SetColorSeats(string message)
@@ -28,6 +29,21 @@ public class ColorManager : MonoBehaviour
             mainCarLeather.SetColor("_BaseColor", color);
             passengerLeather.SetColor("_BaseColor", color);
             
+        }
+    }  
+    public void SetColorSteering(string message)
+    {
+        var parameters = JsonUtility.FromJson<HexColor>(message);
+   
+        var colorCode = parameters.hexcode;
+        
+        Debug.Log("Color Changed");
+        Color color;
+        
+        if (ColorUtility.TryParseHtmlString(colorCode, out color))
+        {
+            steeringWheel.SetColor("_BaseColor", color);
+
         }
     }
   
