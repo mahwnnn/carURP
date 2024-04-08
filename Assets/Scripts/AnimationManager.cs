@@ -44,18 +44,7 @@ public class AnimationManager : MonoBehaviour
      
     }
    
-    public void InteriorView()
-    {
-       // anim.SetBool("wheel",false);
-        if (anim.GetBool("interior"))
-        {
-            anim.SetBool("interior",false);
-        }
-        else
-        {
-            anim.SetBool("interior",true);
-        }
-    } 
+ 
     public void DashView()
     {
        // anim.SetBool("wheel",false);
