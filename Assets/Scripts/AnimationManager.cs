@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class AnimationManager : MonoBehaviour
 {
+  
      Animator anim;
      public CameraController cameraController;
     public GameObject  freeCamText;
@@ -17,6 +19,7 @@ public class AnimationManager : MonoBehaviour
 
     public void WheelView()
     {
+        
         //anim.SetBool("interior",false);
         if (anim.GetBool("wheel"))
         {

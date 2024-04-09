@@ -20,11 +20,11 @@ MonoBehaviour:
     min: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.15
+    m_Value: 0.12
     min: 0
   scatter:
     m_OverrideState: 1
-    m_Value: 0.728
+    m_Value: 0.502
     min: 0
     max: 1
   clamp:
@@ -67,8 +67,8 @@ MonoBehaviour:
   active: 1
   m_AdvancedMode: 0
   color:
-    m_OverrideState: 0
-    m_Value: {r: 0, g: 0, b: 0, a: 1}
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1
@@ -77,12 +77,12 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.33
+    m_Value: 0.21
     min: 0
     max: 1
   smoothness:
     m_OverrideState: 1
-    m_Value: 0.4
+    m_Value: 0.218
     min: 0.01
     max: 1
   rounded:
@@ -110,10 +110,10 @@ MonoBehaviour:
     m_Value: {x: 1, y: 1, z: 1, w: -0.22567566}
   highlights:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: -0.35180297}
+    m_Value: {x: 1, y: 1, z: 1, w: -0.48396158}
   shadowsStart:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 0.03
     min: 0
   shadowsEnd:
     m_OverrideState: 0
@@ -269,12 +269,12 @@ MonoBehaviour:
     m_Value: 2
   intensity:
     m_OverrideState: 1
-    m_Value: 0.19
+    m_Value: 0.376
     min: 0
     max: 1
   clamp:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.078
     min: 0
     max: 0.2
 --- !u!114 &849379129802519247
@@ -310,18 +310,18 @@ MonoBehaviour:
   m_AdvancedMode: 0
   mode:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 2
   gaussianStart:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 5.45
     min: 0
   gaussianEnd:
     m_OverrideState: 1
-    m_Value: 30
+    m_Value: 28.97
     min: 0
   gaussianMaxRadius:
     m_OverrideState: 1
-    m_Value: 1.318
+    m_Value: 1.5
     min: 0.5
     max: 1.5
   highQualitySampling:
@@ -329,7 +329,7 @@ MonoBehaviour:
     m_Value: 1
   focusDistance:
     m_OverrideState: 1
-    m_Value: 1.85
+    m_Value: 3.89
     min: 0.1
   aperture:
     m_OverrideState: 1
@@ -338,7 +338,7 @@ MonoBehaviour:
     max: 32
   focalLength:
     m_OverrideState: 1
-    m_Value: 28
+    m_Value: 59
     min: 1
     max: 300
   bladeCount:
@@ -348,7 +348,7 @@ MonoBehaviour:
     max: 9
   bladeCurvature:
     m_OverrideState: 1
-    m_Value: 0.741
+    m_Value: 0.757
     min: 0
     max: 1
   bladeRotation:
@@ -372,7 +372,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   temperature:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: -2
     min: -100
     max: 100
   tint:
@@ -392,15 +392,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb60a22f311433c4c962b888d1393f88, type: 3}
   m_Name: PaniniProjection
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   m_AdvancedMode: 0
   distance:
-    m_OverrideState: 1
-    m_Value: 0.26
+    m_OverrideState: 0
+    m_Value: 1
     min: 0
     max: 1
   cropToFit:
-    m_OverrideState: 1
-    m_Value: 0.318
+    m_OverrideState: 0
+    m_Value: 0
     min: 0
     max: 1
