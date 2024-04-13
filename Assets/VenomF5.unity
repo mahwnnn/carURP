@@ -2177,7 +2177,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1266552998}
         m_TargetAssemblyTypeName: AnimationManager, Assembly-CSharp
-        m_MethodName: ChnageWheels
+        m_MethodName: FreeCamera
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2768,7 +2768,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132147518760096}
   m_LocalRotation: {x: -0, y: -0.9524083, z: -0, w: 0.30482537}
-  m_LocalPosition: {x: -3.7360363, y: 0.00999999, z: -0.7518093}
+  m_LocalPosition: {x: -4.44, y: 0.00999999, z: -0.7518093}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7146055573929109892}
