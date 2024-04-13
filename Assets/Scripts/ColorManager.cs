@@ -7,7 +7,7 @@ using UnityEngine;
 public class ColorManager : MonoBehaviour
 {
     public Material bodymaterial;
-    public Material rimsmaterial;
+    public Material rims1material,rims2material;
     public Material brakematerial;
     public Material bodyshell;
     public Material passengerLeather;
@@ -89,7 +89,8 @@ public class ColorManager : MonoBehaviour
         
         if (ColorUtility.TryParseHtmlString(colorCode, out color))
         {
-            rimsmaterial.SetColor("_BaseColor", color);
+            rims1material.SetColor("_BaseColor", color);
+            rims2material.SetColor("_BaseColor", color);
             
         }
     } 

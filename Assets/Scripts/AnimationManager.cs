@@ -5,22 +5,47 @@ using UnityEngine.Rendering;
 
 public class AnimationManager : MonoBehaviour
 {
+    public GameObject[] wheels2;
+    public GameObject[] wheels1;
   
      Animator anim;
      public CameraController cameraController;
     public GameObject  freeCamText;
+    public Camera wheelCamera, leatherCamera, dashCamera, shellCamera;
     void Start()
     {
         anim = GetComponent<Animator>();
         FreeCamera();
     }
 
-
-
+  
+    public void ChnageWheels()
+    {
+        if (wheels1[0].activeSelf)
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                wheels1[i].gameObject.SetActive(false);
+                wheels2[i].gameObject.SetActive(true);
+            } 
+        
+        }
+        else
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                wheels2[i].gameObject.SetActive(false);
+                wheels1[i].gameObject.SetActive(true);
+               
+            }
+           
+        }
+       
+    }
     public void WheelView()
     {
-        
-        //anim.SetBool("interior",false);
+       
+      
         if (anim.GetBool("wheel"))
         {
             anim.SetBool("wheel",false);
@@ -31,10 +56,11 @@ public class AnimationManager : MonoBehaviour
         }
    
      
-    }  public void LeatherlView()
+    } 
+    public void LeatherlView()
     {
-       // anim.SetBool("wheel",false);
-       // anim.SetBool("interior",false);
+       
+       
         if (anim.GetBool("leather"))
         {
             anim.SetBool("leather",false);
@@ -44,13 +70,14 @@ public class AnimationManager : MonoBehaviour
             anim.SetBool("leather",true);
         }
    
-     
+      
     }
    
  
     public void DashView()
     {
-       // anim.SetBool("wheel",false);
+       
+     
         if (anim.GetBool("Dash"))
         {
             anim.SetBool("Dash",false);
@@ -59,10 +86,12 @@ public class AnimationManager : MonoBehaviour
         {
             anim.SetBool("Dash",true);
         }
+     
     }
     public void ShellView()
     {
-       // anim.SetBool("wheel",false);
+        
+      
         if (anim.GetBool("shell"))
         {
             anim.SetBool("shell",false);
@@ -71,6 +100,7 @@ public class AnimationManager : MonoBehaviour
         {
             anim.SetBool("shell",true);
         }
+     
     }
     public void FreeCamera()
     {
