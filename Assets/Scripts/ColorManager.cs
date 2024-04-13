@@ -10,9 +10,10 @@ public class ColorManager : MonoBehaviour
     public Material rims1material,rims2material;
     public Material brakematerial;
     public Material bodyshell;
-    public Material passengerLeather;
-    public Material mainCarLeather;
+  
+    public Material carSeat;
     public Material steeringWheel;
+    public Material dashboardMaterial;
 
 
     public void SetColorSeats(string message)
@@ -26,8 +27,24 @@ public class ColorManager : MonoBehaviour
         
         if (ColorUtility.TryParseHtmlString(colorCode, out color))
         {
-            mainCarLeather.SetColor("_BaseColor", color);
-            passengerLeather.SetColor("_BaseColor", color);
+            carSeat.SetColor("_BaseColor", color);
+         
+            
+        }
+    } 
+    public void SetColorDashboard(string message)
+    {
+        var parameters = JsonUtility.FromJson<HexColor>(message);
+   
+        var colorCode = parameters.hexcode;
+        
+        Debug.Log("Color Changed");
+        Color color;
+        
+        if (ColorUtility.TryParseHtmlString(colorCode, out color))
+        {
+            dashboardMaterial.SetColor("_BaseColor", color);
+         
             
         }
     }  
