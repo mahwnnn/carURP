@@ -7,19 +7,24 @@ public class AnimationManager : MonoBehaviour
 {
     public GameObject wheels2;
     public GameObject wheels1;
-  
-     Animator anim;
-     public CameraController cameraController;
-    public GameObject  freeCamText;
+
+    Animator anim;
+    public CameraController cameraController;
+    public GameObject freeCamText;
     public Camera wheelCamera, leatherCamera, dashCamera, shellCamera;
+
     void Start()
     {
         anim = GetComponent<Animator>();
         FreeCamera();
     }
 
-  
-    public void ChnageWheels()
+    public void CinematicView()
+    {
+        anim.SetTrigger("cineView");
+    }
+
+public void ChnageWheels()
     {
         if (wheels1.activeSelf)
         {

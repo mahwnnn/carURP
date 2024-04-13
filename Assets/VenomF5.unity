@@ -1653,7 +1653,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1266552998}
         m_TargetAssemblyTypeName: AnimationManager, Assembly-CSharp
-        m_MethodName: ChnageWheels
+        m_MethodName: CinematicView
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3946,6 +3946,7 @@ GameObject:
   - component: {fileID: 543450652408513718}
   - component: {fileID: 3469287838540663571}
   - component: {fileID: 1711813854748245977}
+  - component: {fileID: 919132148205870605}
   m_Layer: 0
   m_Name: SDC WHEEL 12 (3)
   m_TagString: Untagged
@@ -3953,6 +3954,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &919132148205870605
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148205870604}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.013186491, y: 0.0065438407, z: 0.013309816}
+  m_Center: {x: -0.00014471907, y: -0.0012351485, z: -0.00009983408}
 --- !u!1 &919132148519447690
 GameObject:
   m_ObjectHideFlags: 0
