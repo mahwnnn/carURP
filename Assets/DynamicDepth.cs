@@ -45,7 +45,7 @@ public class DynamicDepth : MonoBehaviour
                   
                     // Set the focus distance based on the hit point distance from the camera
                     float distance = Vector3.Distance(camera.transform.position, hit.point);
-                   print(hit.collider.gameObject.name);
+              
                     depthOfField.focusDistance.value = distance;
                     depthOfField.aperture.value = valueOfBukeh;
 
