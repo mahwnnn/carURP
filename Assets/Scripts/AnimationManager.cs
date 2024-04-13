@@ -5,8 +5,8 @@ using UnityEngine.Rendering;
 
 public class AnimationManager : MonoBehaviour
 {
-    public GameObject[] wheels2;
-    public GameObject[] wheels1;
+    public GameObject wheels2;
+    public GameObject wheels1;
   
      Animator anim;
      public CameraController cameraController;
@@ -21,23 +21,21 @@ public class AnimationManager : MonoBehaviour
   
     public void ChnageWheels()
     {
-        if (wheels1[0].activeSelf)
+        if (wheels1.activeSelf)
         {
-            for (int i = 0; i < 4; i++)
-            {
-                wheels1[i].gameObject.SetActive(false);
-                wheels2[i].gameObject.SetActive(true);
-            } 
+            
+                wheels1.gameObject.SetActive(false);
+                wheels2.gameObject.SetActive(true);
+            
         
         }
         else
         {
-            for (int i = 0; i < 4; i++)
-            {
-                wheels2[i].gameObject.SetActive(false);
-                wheels1[i].gameObject.SetActive(true);
+            
+                wheels2.gameObject.SetActive(false);
+                wheels1.gameObject.SetActive(true);
                
-            }
+            
            
         }
        
