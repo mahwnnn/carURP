@@ -11,7 +11,7 @@ public class AnimationManager : MonoBehaviour
     Animator anim;
     public CameraController cameraController;
     public GameObject freeCamText;
-    public Camera wheelCamera, leatherCamera, dashCamera, shellCamera;
+ 
 
     void Start()
     {
@@ -32,6 +32,66 @@ public class AnimationManager : MonoBehaviour
         }
         wheels[index].SetActive(true);
     }
+    public void LipView()
+    {
+       
+      
+        if (anim.GetBool("Lip"))
+        {
+            anim.SetBool("Lip",false);
+        }
+        else
+        {
+            anim.SetBool("Lip",true);
+        }
+   
+     
+    } 
+    public void MirrorView()
+    {
+       
+      
+        if (anim.GetBool("Mirror"))
+        {
+            anim.SetBool("Mirror",false);
+        }
+        else
+        {
+            anim.SetBool("Mirror",true);
+        }
+   
+     
+    } 
+    public void RoofView()
+    {
+       
+      
+        if (anim.GetBool("Roof"))
+        {
+            anim.SetBool("Roof",false);
+        }
+        else
+        {
+            anim.SetBool("Roof",true);
+        }
+   
+     
+    } 
+    public void HoodView()
+    {
+       
+      
+        if (anim.GetBool("Hood"))
+        {
+            anim.SetBool("Hood",false);
+        }
+        else
+        {
+            anim.SetBool("Hood",true);
+        }
+   
+     
+    } 
     public void WheelView()
     {
        
