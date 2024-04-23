@@ -1745,16 +1745,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1266552998}
-        m_TargetAssemblyTypeName: AnimationManager, Assembly-CSharp
-        m_MethodName: CinematicView
-        m_Mode: 1
+      - m_Target: {fileID: 1266552999}
+        m_TargetAssemblyTypeName: ColorManager, Assembly-CSharp
+        m_MethodName: SetColorHood
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: carbon
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &938587071
@@ -2496,8 +2496,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8ef33ca57fb9c540ae93d91e2907eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wheels2: {fileID: 492867147}
-  wheels1: {fileID: 171660102}
+  wheels:
+  - {fileID: 171660102}
+  - {fileID: 492867147}
   cameraController: {fileID: 1554792495}
   freeCamText: {fileID: 1688211666}
   wheelCamera: {fileID: 191918317}
@@ -2516,6 +2517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03ae099e038f8434793ee73ad2944446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  carbonMaterial: {fileID: 2100000, guid: a97fae7dbe420ba4b92e62ef59de6535, type: 2}
   bodymaterial: {fileID: 2100000, guid: de7de450ef50c96498715820ff7eef7b, type: 2}
   rims1material: {fileID: 2100000, guid: f2e0cb0444f09f84da70df4274b9a2ad, type: 2}
   rims2material: {fileID: 2100000, guid: 62cc3bbf491c76044aea97a0d535130c, type: 2}
@@ -2524,6 +2526,9 @@ MonoBehaviour:
   carSeat: {fileID: 2100000, guid: 89f5bb26b22563b43ba01ed4941ce7cd, type: 2}
   steeringWheel: {fileID: 2100000, guid: e88c29c930872cb4a8bee8d8f571802d, type: 2}
   dashboardMaterial: {fileID: 2100000, guid: 6452d311ac3f01b42b1337528c5a7513, type: 2}
+  HoodMaterial: {fileID: 2100000, guid: ac0dd55dfc5633a488b78cc84b9c4015, type: 2}
+  lipMaterial: {fileID: 2100000, guid: 56d107af9d3f58043a208c925faf76db, type: 2}
+  mirrorMaterial: {fileID: 2100000, guid: 0491eda535b53eb45bda166862d72d10, type: 2}
 --- !u!1 &1287544286
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class ColorManager : MonoBehaviour
 {
+    public Material carbonMaterial;
+    
     public Material bodymaterial;
     public Material rims1material,rims2material;
     public Material brakematerial;
@@ -14,8 +16,88 @@ public class ColorManager : MonoBehaviour
     public Material carSeat;
     public Material steeringWheel;
     public Material dashboardMaterial;
+    
+    public Material HoodMaterial;
+    public Material lipMaterial;
+    public Material mirrorMaterial;
 
 
+    
+    public void SetColorHood(string message)
+    {
+        var parameters = JsonUtility.FromJson<HexColor>(message);
+        if (parameters.hexcode.Equals("carbon"))
+        {
+            HoodMaterial.mainTexture = carbonMaterial.mainTexture;
+         return;   
+        }
+        else
+        {
+            HoodMaterial.mainTexture = null;
+        }
+        var colorCode = parameters.hexcode;
+        
+        Debug.Log("Color Changed");
+        Color color;
+        
+        if (ColorUtility.TryParseHtmlString(colorCode, out color))
+        {
+            HoodMaterial.SetColor("_BaseColor", color);
+         
+            
+        }
+    } 
+    
+    public void SetColorLip(string message)
+    {
+        var parameters = JsonUtility.FromJson<HexColor>(message);
+        if (parameters.hexcode.Equals("carbon"))
+        {
+            lipMaterial.mainTexture = carbonMaterial.mainTexture;
+            return;   
+        }
+        else
+        {
+            lipMaterial.mainTexture = null;
+        }
+        var colorCode = parameters.hexcode;
+        
+        Debug.Log("Color Changed");
+        Color color;
+        
+        if (ColorUtility.TryParseHtmlString(colorCode, out color))
+        {
+            lipMaterial.SetColor("_BaseColor", color);
+         
+            
+        }
+    } 
+    
+    public void SetColorMirror(string message)
+    {
+        var parameters = JsonUtility.FromJson<HexColor>(message);
+        if (parameters.hexcode.Equals("carbon"))
+        {
+            mirrorMaterial.mainTexture = carbonMaterial.mainTexture;
+            return;   
+        }
+        else
+        {
+            mirrorMaterial.mainTexture = null;
+        }
+        var colorCode = parameters.hexcode;
+        
+        Debug.Log("Color Changed");
+        Color color;
+        
+        if (ColorUtility.TryParseHtmlString(colorCode, out color))
+        {
+            mirrorMaterial.SetColor("_BaseColor", color);
+         
+            
+        }
+    } 
+    
     public void SetColorSeats(string message)
     {
         var parameters = JsonUtility.FromJson<HexColor>(message);

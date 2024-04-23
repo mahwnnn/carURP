@@ -5,8 +5,8 @@ using UnityEngine.Rendering;
 
 public class AnimationManager : MonoBehaviour
 {
-    public GameObject wheels2;
-    public GameObject wheels1;
+    public GameObject[] wheels;
+
 
     Animator anim;
     public CameraController cameraController;
@@ -22,28 +22,15 @@ public class AnimationManager : MonoBehaviour
     public void CinematicView()
     {
         anim.SetTrigger("cineView");
-    }
-
-public void ChnageWheels()
+    } 
+    public void ChnageWheels(int index)  //start with 0
     {
-        if (wheels1.activeSelf)
+
+        for (int i = 0; i < wheels.Length; i++)
         {
-            
-                wheels1.gameObject.SetActive(false);
-                wheels2.gameObject.SetActive(true);
-            
-        
+            wheels[i].SetActive(false);
         }
-        else
-        {
-            
-                wheels2.gameObject.SetActive(false);
-                wheels1.gameObject.SetActive(true);
-               
-            
-           
-        }
-       
+        wheels[index].SetActive(true);
     }
     public void WheelView()
     {
