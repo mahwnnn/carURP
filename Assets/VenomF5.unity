@@ -192,7 +192,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 3.55
@@ -744,7 +744,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 3.56
@@ -837,7 +837,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
@@ -1877,7 +1877,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 3.51
@@ -2529,6 +2529,7 @@ MonoBehaviour:
   HoodMaterial: {fileID: 2100000, guid: ac0dd55dfc5633a488b78cc84b9c4015, type: 2}
   lipMaterial: {fileID: 2100000, guid: 56d107af9d3f58043a208c925faf76db, type: 2}
   mirrorMaterial: {fileID: 2100000, guid: 0491eda535b53eb45bda166862d72d10, type: 2}
+  RoofMaterial: {fileID: 2100000, guid: a5001743ecb5277468db4bf27a968814, type: 2}
 --- !u!1 &1287544286
 GameObject:
   m_ObjectHideFlags: 0
@@ -8576,9 +8577,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 97c290a2af2646a479d8029369b950cc, type: 2}
-  - {fileID: 2100000, guid: 5bb6c0acd3afea049bd155b06c1ed44e, type: 2}
   - {fileID: 2100000, guid: c9cec6b1272313c45b5872b47b024289, type: 2}
+  - {fileID: 2100000, guid: c9cec6b1272313c45b5872b47b024289, type: 2}
+  - {fileID: 2100000, guid: a5001743ecb5277468db4bf27a968814, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

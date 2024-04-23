@@ -20,15 +20,42 @@ public class ColorManager : MonoBehaviour
     public Material HoodMaterial;
     public Material lipMaterial;
     public Material mirrorMaterial;
-
-
     
+    public Material RoofMaterial;
+
+
+    public void SetColorRoof(string message)
+    {
+        var parameters = JsonUtility.FromJson<HexColor>(message);
+        if (parameters.hexcode.Equals("carbon"))
+        {
+            RoofMaterial.mainTexture = carbonMaterial.mainTexture;
+            RoofMaterial.color=Color.white;
+            return;   
+        }
+        else
+        {
+            RoofMaterial.mainTexture = null;
+        }
+        var colorCode = parameters.hexcode;
+        
+        Debug.Log("Color Changed");
+        Color color;
+        
+        if (ColorUtility.TryParseHtmlString(colorCode, out color))
+        {
+            RoofMaterial.SetColor("_BaseColor", color);
+         
+            
+        }
+    } 
     public void SetColorHood(string message)
     {
         var parameters = JsonUtility.FromJson<HexColor>(message);
         if (parameters.hexcode.Equals("carbon"))
         {
             HoodMaterial.mainTexture = carbonMaterial.mainTexture;
+            HoodMaterial.color=Color.white;
          return;   
         }
         else
@@ -54,6 +81,7 @@ public class ColorManager : MonoBehaviour
         if (parameters.hexcode.Equals("carbon"))
         {
             lipMaterial.mainTexture = carbonMaterial.mainTexture;
+            lipMaterial.color=Color.white;
             return;   
         }
         else
@@ -79,6 +107,7 @@ public class ColorManager : MonoBehaviour
         if (parameters.hexcode.Equals("carbon"))
         {
             mirrorMaterial.mainTexture = carbonMaterial.mainTexture;
+            mirrorMaterial.color=Color.white;
             return;   
         }
         else
@@ -149,7 +178,16 @@ public class ColorManager : MonoBehaviour
     public void SetColorToShell(string message)
     {
         var parameters = JsonUtility.FromJson<HexColor>(message);
-   
+        if (parameters.hexcode.Equals("carbon"))
+        {
+            bodyshell.mainTexture = carbonMaterial.mainTexture;
+            bodyshell.color=Color.white;
+            return;   
+        }
+        else
+        {
+            bodyshell.mainTexture = null;
+        }
         var colorCode = parameters.hexcode;
         
         Debug.Log("Color Changed");
